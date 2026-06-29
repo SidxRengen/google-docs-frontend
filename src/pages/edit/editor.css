@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.ql-toolbar {
+    border-bottom: 0 !important;
+    box-shadow: none;
+}
+.ql-editor {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    min-height: 12in;
+    padding: 56px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+}
+
+.ql-container {
+    border: 1px solid #e2e8f0 !important;
+    border-top: 0 !important;
+    border-radius: 0 0 12px 12px;
+    background: #f8fafc;
+}
+
+.ql-snow .ql-picker,
+.ql-snow .ql-stroke {
+    color: #334155;
+    stroke: #334155;
+}
