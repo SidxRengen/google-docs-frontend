@@ -46,7 +46,7 @@ export default function Share({ open, setOpen, title, docId, setFiles }) {
 
   return (
     <Transition appear show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={closeModal}>
+      <Dialog as="div" className="relative z-50" onClose={closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -78,7 +78,7 @@ export default function Share({ open, setOpen, title, docId, setFiles }) {
                 <div className="mt-4 mb-2">
                   <p className="text-sm font-semibold text-slate-600">Permission</p>
                 </div>
-                <Listbox as="div" value={permission} onChange={setPermission}>
+                <Listbox as="div" className="relative" value={permission} onChange={setPermission}>
                   <Listbox.Button className="inline-flex w-full items-center justify-between rounded-xl border border-slate-300 bg-white px-4 py-3 text-left shadow-sm transition hover:border-blue-200">
                     <span className="font-['Product_sans'] text-sm font-semibold text-slate-700">{permission}</span>
                     <ArrowDropDownRoundedIcon sx={{ color: "#475569", marginLeft: 1, fontSize: 28 }} />

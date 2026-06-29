@@ -56,7 +56,7 @@ export default function View() {
                 <h1 className="mt-1 font-['Product_sans'] text-3xl font-semibold text-slate-900">Recent documents</h1>
                 <p className="mt-2 text-sm text-slate-500">{filteredDocs.length} document{filteredDocs.length === 1 ? "" : "s"} visible</p>
               </div>
-              <Listbox as="div" value={selected} onChange={setSelected}>
+              <Listbox as="div" className="relative" value={selected} onChange={setSelected}>
                 <Listbox.Button className="inline-flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-left shadow-sm transition hover:border-blue-200 md:w-56">
                   <span className="font-['Product_sans'] text-sm font-semibold capitalize text-slate-700">{selected}</span>
                   <ArrowDropDownRoundedIcon sx={{ color: "#475569", marginLeft: 1, fontSize: 28 }} />
